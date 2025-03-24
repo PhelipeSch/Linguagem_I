@@ -14,10 +14,26 @@ public class SuperMercado {
         System.out.println("CUPOM FISCAL");
         System.out.println("");
         System.out.println("Codigo"+"\t"+"Descricao"+"\t"+"\t"+ "Quantidade" + "\t" + "Valor Unitario" + "\t" + "Desconto"+ "\t" + "Valor Total");
-        System.out.println(i1.codigo +"\t"+ i1.descricao +"\t"+"\t"+ i1.quantidade +"\t"+ i1.preco_unitario +"\t"+"\t"+ i1.desconto+"\t"+"\t"+i1.CalculaValorTotal());
-        System.out.println(i2.codigo +"\t"+ i2.descricao +"\t"+"\t"+ i2.quantidade +"\t"+ i2.preco_unitario +"\t"+"\t"+ i2.desconto+"\t"+"\t"+i2.CalculaValorTotal());
-        System.out.println(i3.codigo +"\t"+ i3.descricao +"\t"+"\t"+ i3.quantidade +"\t"+ i3.preco_unitario +"\t"+"\t"+ i3.desconto+"\t"+"\t"+i3.CalculaValorTotal());
-        System.out.println(i4.codigo +"\t"+ i4.descricao +"\t"+"\t"+ i4.quantidade +"\t"+ i4.preco_unitario +"\t"+"\t"+ i4.desconto+"\t"+"\t"+i4.CalculaValorTotal());
+        System.out.println(i1.getCodigo() +"\t"+ i1.getDescricao() +"\t"+"\t"+ i1.getQuantidade() +"\t"+ i1.getPreco_Unitario() +"\t"+"\t"+ i1.getDesconto() +"\t"+"\t"+i1.CalculaValorTotal());
+        System.out.println(i2.getCodigo() +"\t"+ i2.getDescricao() +"\t"+"\t"+ i2.getQuantidade() +"\t"+ i2.getPreco_Unitario() +"\t"+"\t"+ i2.getDesconto()+"\t"+"\t"+i2.CalculaValorTotal());
+        System.out.println(i3.getCodigo() +"\t"+ i3.getDescricao() +"\t"+"\t"+ i3.getQuantidade() +"\t"+ i3.getPreco_Unitario() +"\t"+"\t"+ i3.getDesconto()+"\t"+"\t"+i3.CalculaValorTotal());
+        System.out.println(i4.getCodigo() +"\t"+ i4.getDescricao() +"\t"+"\t"+ i4.getQuantidade() +"\t"+ i4.getPreco_Unitario() +"\t"+"\t"+ i4.getDesconto()+"\t"+"\t"+i4.CalculaValorTotal());
+        System.out.println("Valor Total: "+total);
+        
+       i1.setPreco_Unitario(35);
+       i2.setPreco_Unitario(90);
+       i3.setPreco_Unitario(22);
+       i4.setPreco_Unitario(260);
+       
+       total = i1.CalculaValorTotal()+i2.CalculaValorTotal()+i3.CalculaValorTotal()+i4.CalculaValorTotal();
+        
+        System.out.println("CUPOM FISCAL ATUALIZADO");
+        System.out.println("");
+        System.out.println("Codigo"+"\t"+"Descricao"+"\t"+"\t"+ "Quantidade" + "\t" + "Valor Unitario" + "\t" + "Desconto"+ "\t" + "Valor Total");
+        System.out.println(i1.getCodigo() +"\t"+ i1.getDescricao() +"\t"+"\t"+ i1.getQuantidade() +"\t"+ i1.getPreco_Unitario() +"\t"+"\t"+ i1.getDesconto() +"\t"+"\t"+i1.CalculaValorTotal());
+        System.out.println(i2.getCodigo() +"\t"+ i2.getDescricao() +"\t"+"\t"+ i2.getQuantidade() +"\t"+ i2.getPreco_Unitario() +"\t"+"\t"+ i2.getDesconto()+"\t"+"\t"+i2.CalculaValorTotal());
+        System.out.println(i3.getCodigo() +"\t"+ i3.getDescricao() +"\t"+"\t"+ i3.getQuantidade() +"\t"+ i3.getPreco_Unitario() +"\t"+"\t"+ i3.getDesconto()+"\t"+"\t"+i3.CalculaValorTotal());
+        System.out.println(i4.getCodigo() +"\t"+ i4.getDescricao() +"\t"+"\t"+ i4.getQuantidade() +"\t"+ i4.getPreco_Unitario() +"\t"+"\t"+ i4.getDesconto()+"\t"+"\t"+i4.CalculaValorTotal());
         System.out.println("Valor Total: "+total);
     }
 }
